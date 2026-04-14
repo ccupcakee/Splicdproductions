@@ -372,7 +372,7 @@
     #services { border-top: 1px solid var(--border); background: #080808; }
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1px;
       background: var(--border);
       border: 1px solid var(--border);
@@ -412,6 +412,8 @@
 
     /* ── CONTACT ── */
     #contact { border-top: 1px solid var(--border); background: linear-gradient(to bottom, transparent, rgba(123,92,246,0.05)); }
+    #contact-info { border-top: 1px solid var(--border); padding: 4rem 3rem; }
+    #contact-info .container { text-align: center; }
     .cta-inner { text-align: center; max-width: 600px; margin: 0 auto; }
     .cta-title { font-family: var(--font-display); font-size: clamp(36px, 6vw, 64px); font-weight: 800; color: var(--white); margin-bottom: 1.5rem; }
     .cta-title .accent { color: var(--purple); }
@@ -446,6 +448,9 @@
     .footer-logo span { color: var(--purple); }
     .footer-links { display: flex; gap: 2rem; list-style: none; }
     .footer-links a { font-size: 12px; color: var(--gray); text-decoration: none; }
+    .footer-contact { font-size: 12px; color: var(--gray); }
+    .footer-contact a { color: var(--white); text-decoration: none; transition: color 0.2s; }
+    .footer-contact a:hover { color: var(--purple-light); }
     .footer-copy { font-size: 12px; color: rgba(136,136,136,0.4); }
 
     @media (max-width: 768px) {
@@ -522,6 +527,7 @@
       <div class="services-grid">
         <div class="service-item"><p class="service-num">01</p><p class="service-title">Klippning</p><p class="service-text">Vi väljer ut de bästa delarna ur råmaterialet för maxad engagemang.</p></div>
         <div class="service-item"><p class="service-num">02</p><p class="service-title">Textning</p><p class="service-text">Animerade undertexter som förstärker budskapet och ökar retention.</p></div>
+        <div class="service-item"><p class="service-num">03</p><p class="service-title">Färgkorrigering och ljudeffekter</p><p class="service-text">Professionell färgkvalitet och strategiskt placerade ljud för maximum impact.</p></div>
       </div>
     </div>
   </section>
@@ -573,7 +579,7 @@
         <p class="cta-sub">Fyll i formuläret så hör vi av oss inom 24 timmar.</p>
       </div>
 
-      <form id="contact-form" action="https://formspree.io/f/xqewaydw" method="POST" class="contact-form">
+      <form id="contact-form" action="https://formspree.io/splicdproductions@gmail.com" method="POST" class="contact-form">
 <input type="hidden" name="_subject" value="Kontaktförfrågan från splicdproductions.se">
 <input type="hidden" name="_language" value="sv">
 
@@ -602,6 +608,10 @@
       <div id="thank-you-message">
         <h2 class="section-title" style="margin-bottom: 10px;">Tack!</h2>
         <p class="section-sub" style="margin: 0 auto;">Vi har tagit emot ditt meddelande och återkommer så snart vi kan.</p>
+      </div>
+
+      <div id="contact-info" style="text-align: center; margin-top: 3rem; padding-top: 3rem; border-top: 1px solid var(--border);">
+        <p class="footer-contact">Kontakta oss: <a href="mailto:splicdproductions@gmail.com">splicdproductions@gmail.com</a></p>
       </div>
     </div>
   </section>
